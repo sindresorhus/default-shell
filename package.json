@@ -1,0 +1,44 @@
+{
+  "name": "default-shell",
+  "version": "0.0.0",
+  "description": "Get the user's default shell",
+  "license": "MIT",
+  "repository": "sindresorhus/default-shell",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "default",
+    "shell",
+    "sh",
+    "zsh",
+    "bash",
+    "cmd",
+    "cmd.exe",
+    "comspec",
+    "env",
+    "environment",
+    "var",
+    "variables",
+    "get",
+    "user"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
