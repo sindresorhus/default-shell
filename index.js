@@ -2,7 +2,7 @@
 module.exports = () => {
 	const env = process.env;
 
-	if (process.platform === 'darwin') {
+	if (process.platform === 'darwin' || process.platform === 'linux' || process.platform === 'freebsd') {
 		return env.SHELL || '/bin/bash';
 	}
 
