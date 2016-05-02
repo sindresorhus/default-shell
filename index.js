@@ -1,5 +1,5 @@
 'use strict';
-module.exports = () => {
+module.exports = (() => {
 	const env = process.env;
 
 	if (process.platform === 'darwin') {
@@ -11,4 +11,4 @@ module.exports = () => {
 	}
 
 	return env.SHELL || '/bin/sh';
-}();
+})();
