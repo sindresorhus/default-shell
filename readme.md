@@ -15,7 +15,7 @@ $ npm install --save default-shell
 ```js
 const defaultShell = require('default-shell');
 
-// OS X
+// macOS
 console.log(defaultShell);
 //=> '/bin/bash'
 
