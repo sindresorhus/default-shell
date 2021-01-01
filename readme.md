@@ -1,4 +1,4 @@
-# default-shell [![Build Status](https://travis-ci.org/sindresorhus/default-shell.svg?branch=master)](https://travis-ci.org/sindresorhus/default-shell)
+# default-shell
 
 > Get the user's default [shell](https://en.wikipedia.org/wiki/Shell_(computing))
 
