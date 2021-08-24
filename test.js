@@ -1,6 +1,7 @@
+import process from 'node:process';
 import test from 'ava';
-import m from './';
+import defaultShell from './index.js';
 
-test(t => {
-	t.true(m.startsWith(process.platform === 'win32' ? 'C:\\' : '/bin/'));
+test('main', t => {
+	t.true(defaultShell.startsWith(process.platform === 'win32' ? 'C:\\' : '/bin/'));
 });
