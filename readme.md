@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --save default-shell
+```sh
+npm install default-shell
 ```
 
 ## Usage
