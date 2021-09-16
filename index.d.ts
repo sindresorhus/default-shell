@@ -3,7 +3,7 @@ The user's default shell.
 
 @example
 ```
-import defaultShell from 'default-shell';
+import {defaultShell} from 'default-shell';
 
 // macOS
 console.log(defaultShell);
@@ -14,6 +14,19 @@ console.log(defaultShell);
 //=> 'C:\\WINDOWS\\system32\\cmd.exe'
 ```
 */
-declare const defaultShell: string;
+export const defaultShell: string;
 
-export default defaultShell;
+/**
+This can be useful if the default shell changes during running.
+
+@returns The user's current default shell.
+
+@example
+```
+import {detectShell} from 'default-shell';
+
+console.log(detectShell());
+//=> Same as `defaultShell` if nothing has changed.
+```
+*/
+export function detectShell(): string;
