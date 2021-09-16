@@ -23,4 +23,6 @@ export const detectShell = () => {
 };
 
 // Stores default shell when imported.
-export const defaultShell = detectShell();
+const defaultShell = detectShell();
+
+export default defaultShell;

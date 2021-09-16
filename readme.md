@@ -11,7 +11,7 @@ npm install default-shell
 ## Usage
 
 ```js
-import {defaultShell, detectShell} from 'default-shell';
+import defaultShell, {detectShell} from 'default-shell';
 
 // macOS
 console.log(defaultShell);
