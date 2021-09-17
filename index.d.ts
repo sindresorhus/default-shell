@@ -19,16 +19,16 @@ declare const defaultShell: string;
 export default defaultShell;
 
 /**
-This can be useful if the default shell changes during running.
+This can be useful if the default shell changes at runtime.
 
 @returns The user's current default shell.
 
 @example
 ```
-import {detectShell} from 'default-shell';
+import {detectDefaultShell} from 'default-shell';
 
-console.log(detectShell());
-//=> Same as `defaultShell` if nothing has changed.
+console.log(detectDefaultShell());
+//=> '/bin/bash'
 ```
 */
-export function detectShell(): string;
+export function detectDefaultShell(): string;

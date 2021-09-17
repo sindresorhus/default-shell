@@ -1,7 +1,7 @@
 import process from 'node:process';
 import {userInfo} from 'node:os';
 
-export const detectShell = () => {
+export const detectDefaultShell = () => {
 	const {env} = process;
 
 	if (process.platform === 'win32') {
@@ -23,6 +23,6 @@ export const detectShell = () => {
 };
 
 // Stores default shell when imported.
-const defaultShell = detectShell();
+const defaultShell = detectDefaultShell();
 
 export default defaultShell;
