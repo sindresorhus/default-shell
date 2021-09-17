@@ -11,7 +11,7 @@ npm install default-shell
 ## Usage
 
 ```js
-import defaultShell, {detectDefaultShell} from 'default-shell';
+import defaultShell from 'default-shell';
 
 // macOS
 console.log(defaultShell);
@@ -20,8 +20,13 @@ console.log(defaultShell);
 // Windows
 console.log(defaultShell);
 //=> 'C:\\WINDOWS\\system32\\cmd.exe'
+```
 
-// This can be useful if the default shell changes at runtime.
+There is also a method that gets the correct default shell even if it changes at runtime:
+
+```js
+import {detectDefaultShell} from 'default-shell';
+
 console.log(detectDefaultShell());
 //=> '/bin/bash'
 ```
