@@ -1,6 +1,6 @@
 {
 	"name": "default-shell",
-	"version": "2.1.0",
+	"version": "2.2.0",
 	"description": "Get the user's default shell",
 	"license": "MIT",
 	"repository": "sindresorhus/default-shell",
