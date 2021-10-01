@@ -15,7 +15,7 @@ import defaultShell from 'default-shell';
 
 // macOS
 console.log(defaultShell);
-//=> '/bin/bash'
+//=> '/bin/zsh'
 
 // Windows
 console.log(defaultShell);
@@ -28,5 +28,5 @@ There is also a method that gets the correct default shell even if it changes at
 import {detectDefaultShell} from 'default-shell';
 
 console.log(detectDefaultShell());
-//=> '/bin/bash'
+//=> '/bin/zsh'
 ```
